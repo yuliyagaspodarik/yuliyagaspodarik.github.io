@@ -1,0 +1,144 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+    --questions-color: var(--fig);
+}
+
+.teachers__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.teachers__item {
+    width: 14rem;
+    margin: 1rem;
+}
+
+.teachers__item img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.teachers__profile {
+    color: var(--link-border-font-color);
+    text-decoration: none;
+    font-family: 'Gelasio', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.teachers__photo figcaption {
+    border-bottom: 1px solid var(--link-border-font-color);
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+.lessons {
+    padding: 4rem;
+    margin: 4rem 0;
+    background-color: var(--bg-container-color);
+}
+
+#lessons .lessons__title {
+    margin: 0;
+}
+
+#lessons .lessons__subtitle {
+    margin-left: 0;
+}
+
+.lessons__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons__item {
+    width: 30rem;
+}
+
+.lessons__item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.lessons__item:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05, 1.05);
+
+}
+
+.lessons__item figure {
+    position: relative;
+}
+
+.lessons__item figcaption {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 0.5rem;
+    background-color: var(--bg-container-color);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.lessons__link {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.groups__information {
+    margin: 1rem 2rem;
+    text-align: justify;
+}
+
+.groups__information span {
+    color: var(--link-border-font-color);
+}
+
+@media (max-width: 37.5rem) {
+    #teachers .title,
+    #groups .title,
+    #lessons .title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #teachers .subtitle,
+    #groups .subtitle,
+    #lessons .subtitle {
+        font-size: 0.8rem;
+    }
+
+    #lessons .subtitle {
+        margin-left: 2rem;
+    }
+
+    #teachers figcaption,
+    #lessons a {
+        font-size: 1rem;
+    }
+
+    .lessons {
+        padding: 0;
+        margin: 0;
+    }
+
+    .groups__information {
+        font-size: 0.8rem;
+    }
+}

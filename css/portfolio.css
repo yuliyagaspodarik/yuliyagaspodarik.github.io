@@ -1,0 +1,67 @@
+@import "style.css";
+
+:root {
+    --link-border-font-color: var(--burgundy);
+}
+
+.portfolio__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.portfolio__item {
+    width: 20rem;
+    margin: 0.5rem;
+}
+
+.portfolio__item a {
+    text-decoration: none;
+}
+
+.portfolio__item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio__photo figcaption {
+    border-bottom: 1px solid var(--link-border-font-color);
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+.portfolio__profile {
+    color: var(--link-border-font-color);
+    text-decoration: none;
+    font-family: 'Gelasio', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.portfolio__item:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width: 37.5rem) {
+    #portfolio .portfolio__title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #portfolio .portfolio__subtitle {
+        font-size: 0.8rem;
+    }
+
+    #portfolio .portfolio__photo figcaption,
+    #portfolio .portfolio__profile-title {
+        font-size: 0.7rem;
+    }
+
+    #portfolio .portfolio__wrapper {
+        padding: 0;
+        margin: 0;
+    }
+}

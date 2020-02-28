@@ -1,0 +1,278 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+    --questions-color: var(--fig);
+}
+
+.description__monogram {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.description__monogram img {
+    width: 100%;
+}
+
+.description__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.description__content-title {
+    margin: 1rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#advantages {
+    background-color: var(--bg-container-color);
+    box-shadow: 2px 1px 3px 1px rgba(89, 87, 87, 0.5);
+    height: 20rem;
+}
+
+.advantages__title,
+.profile__title {
+    margin: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.advantages__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.advantages__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    color: var(--font-color);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.advantages__item i:before {
+    position: absolute;
+    top: 3rem;
+    left: calc(50% - 2.5rem);
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 3px solid var(--font-color);
+    border-radius: 50px;
+    font-size: 3rem;
+}
+
+.questions__wrapper {
+    margin: 3rem 5rem;
+}
+
+.questions__item {
+    margin: 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.questions__item:active {
+    border-color: var(--questions-color);
+}
+
+.ui-state-active {
+    background-color: var(--questions-color);
+}
+
+.ui-state-default {
+    color: var(--font-color);
+}
+
+.questions__answers {
+    margin: 0.7rem;
+    background-color: var(--questions-color);
+    font-family: 'Lobster', cursive;
+}
+
+.questions__answers p {
+    padding: 0;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+}
+
+#profile {
+    background-color: var(--bg-container-color);
+}
+
+.profile__wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.profile__photo img {
+    width: 100%;
+}
+
+.profile__item {
+    width: 40%;
+    margin: 0;
+}
+
+form {
+    width: 100%;
+}
+
+.form-cell,
+input[type=submit] {
+    width: 12rem;
+    height: 2rem;
+    border: none;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+.form-cell__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-area__wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+}
+
+input[type=submit] {
+    margin: 1rem 0;
+    color: var(--bg-color);
+    background-color: var(--link-border-font-color);
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+}
+
+input[type=checkbox] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 71.9rem) {
+    .description__content-title {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .description__content {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .description__photos-series figcaption p {
+        font-size: 0.9rem;
+    }
+
+    .advantages__title {
+        margin: 0;
+    }
+
+    .advantages__wrapper .advantages__item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 42rem) {
+    #description .title,
+    #advantages .advantages__title,
+    #questions .title,
+    #profile .profile__title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #description .subtitle,
+    #questions .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .description__wrapper .description__photos-series p {
+        font-size: 0.5rem;
+    }
+
+    #description .description__wrapper {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #description .description__item {
+        width: 80%;
+    }
+
+    #description figcaption p {
+        font-size: 1.2rem;
+    }
+
+    #description .description__photos-series {
+        order: 1;
+    }
+
+    #description .description__content {
+        order: 2;
+    }
+
+    #description .description__photos-first {
+        order: 3;
+    }
+
+    #advantages .advantages__item {
+        font-size: 0.7rem;
+    }
+
+    #advantages .advantages__item i:before {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #questions .questions__item {
+        font-size: 0.8rem;
+    }
+
+    #questions .questions__wrapper {
+        margin: 0 1rem;
+    }
+
+    #questions .questions__answers p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    #profile .profile__wrapper {
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+    }
+
+    #profile .profile__item {
+        width: 90%;
+    }
+}

@@ -1,0 +1,106 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+}
+
+.parallax {
+    position: relative;
+    opacity: 0.9;
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fashionshow {
+    margin-top: 4rem;
+    background-image: url("../images/img171.jpg");
+    background-position-y: -1rem;
+}
+
+.defile {
+    background-image: url("../images/img162.jpg");
+}
+
+.photopose {
+    background-image: url("../images/img163.jpg");
+}
+
+.choreography {
+    background-image: url("../images/img145.jpg");
+}
+
+.parallax__title {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.parallax__title span {
+    padding: 0 1rem;
+    color: var(--bg-color);
+    text-transform: none;
+    font-weight: 700;
+}
+
+.lesson__title {
+    text-align: center;
+}
+
+.lesson__content {
+    padding: 1rem 6rem 2rem;
+    margin: 1rem 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.lesson__wrapper--black {
+    background-color: black;
+}
+
+.lesson__wrapper--black .title {
+    padding-top: 2rem;
+    margin-top: 0;
+    color: var(--bg-container-color);
+    border-color: var(--bg-container-color);
+}
+
+.lesson__wrapper--white .title {
+    margin-top: 2rem;
+}
+
+.lesson__wrapper--black .lesson__content {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    color: var(--bg-container-color);
+}
+
+@media (max-width: 62.5rem) {
+    .lesson__content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    .lesson .lesson__title {
+        font-size: 1.2rem;
+    }
+
+    .parallax__title span {
+        font-size: 1.2rem;
+    }
+
+    .lesson__content {
+        padding: 1rem 3rem 2rem;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+}
