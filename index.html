@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elliz Models</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gelasio:400,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="/json/manifest.json">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $(function () {
+          $("#question__wrapper").accordion();
+      });
+  </script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+  <div id="backdrop" class="backdrop"></div>
+  <header class="main-header">
+    <div>
+      <button id="toggle-button" class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+    </div>
+    <nav id="main-nav" class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="index.html" title="На главную">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="pages/about.html" title="Перейти к разделу о нас">О нас</a>
+        </li>
+        <li class="main-nav__item activity">
+          <a href="pages/activity.html" title="Перейти к разделу о деятельности">Деятельность</a>
+          <ul class="main-nav__items-submenu">
+            <li><a href="pages/activity.html#projects">Проекты</a></li>
+            <li><a href="pages/activity.html#events">События</a></li>
+          </ul>
+        </li>
+        <li class="main-nav__item logo logo-header">
+          <a href="index.html"
+             title="Детское модельное агентство">ELLIZ<br/><span>Kids Model Agency</span><br/>MODELS</a>
+        </li>
+        <li class="main-nav__item activity">
+          <a href="pages/training.html" title="Перейти к разделу об обучении">Обучение</a>
+          <ul class="main-nav__items-submenu">
+            <li><a href="pages/training.html#teachers">Педагоги</a></li>
+            <li><a href="pages/lessons.html">Занятия</a></li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a href="pages/castings.html" title="Перейти к разделу о кастингах">Кастинги</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="pages/portfolio.html" title="Перейти к разделу портфолио моделей">Портфолио</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <ul class="main-header__contact contact">
+        <li class="contact__item">
+          <a href="tel:+375298820882" title="Позвонить">+375298820882</a>
+        </li>
+        <li class="contact__item">
+          <a href="tel:+375297887158" title="Позвонить">+375297887158</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="description">
+      <h1 class="description__title title">Приглашаем детей и подростков в детское модельное агентство</h1>
+      <h2 class="subtitle">Мы поможем Вашему ребенку попробовать себя в детском моделинге</h2>
+      <div class="description__wrapper">
+        <div class="description__item description__photos description__photos-first">
+          <img src="images/img1.jpg" alt="Милена Гасподарик">
+        </div>
+        <div class="description__item description__content">
+          <div class="description__monogram">
+            <img src="images/monogram3.png" alt="monogram-picture">
+          </div>
+          <p class="description__content-title">
+            Elliz Models
+          </p>
+          <p>
+            Это дружная команда профессионалов поможет раскрыть потенциал Вашего ребенка, а опытный агент сделает
+            все возможное для участия каждой нашей модели в крупных съемках, показах и проектах.
+          </p>
+          <p>
+            Это рекламные и имиджевые съемки в Беларуси, России, Италии, а так же участие в показах и неделях моды
+            в Беларуси и России.
+          </p>
+          <p>
+            Это любовь к детям!
+          </p>
+        </div>
+        <div class="description__item description__photos description__photos-series">
+          <figure>
+            <img src="images/img2.jpg" alt="Милена Гасподарик">
+            <figcaption>
+              <p>ELLIZ<br/><span>Kids Model Agency</span><br/>MODELS</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="advantages">
+      <h1 class="advantages__title">Почему мы?</h1>
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <div class="i-wrapper"><i class="i-eM-address-book"></i></div>
+          <div>Готовое портфолио и сертификат</div>
+        </div>
+        <div class="advantages__item">
+          <div class="i-wrapper"><i class="i-eM-users"></i></div>
+          <div>Автоматическая регистрация в базе моделей</div>
+        </div>
+        <div class="advantages__item">
+          <div class="i-wrapper"><i class="i-eM-camera"></i></div>
+          <div>Участие в съемках, показах и кастингах</div>
+        </div>
+        <div class="advantages__item">
+          <div class="i-wrapper"><i class="i-eM-calendar"></i></div>
+          <div>Еженедельные занятия + поддержка 24/7</div>
+        </div>
+      </div>
+    </section>
+    <section id="questions">
+      <h1 class="questions__title title">Самые популярные вопросы</h1>
+      <h2 class="questions__subtitle subtitle">То, что интересует Вас чаще всего</h2>
+      <div id="question__wrapper" class="questions__wrapper">
+        <h3 class="questions__item">Сколько стоят занятия в модельной школе?</h3>
+        <div id="ans1" class="questions__answers">
+          <p>
+            Стоимость занятий составляет 40 br для обучающихся младшей группы и 60 br для обучающихся других групп.
+            Предусмотрена система скидок для детей из одной семьи. Кроме того, производится перерасчет стоимости
+            занятий, пропущенных по уважительной причине.
+          </p>
+        </div>
+        <h3 class="questions__item">У меня нет опыта. Возьмут ли меня в школу?</h3>
+        <div id="ans2" class="questions__answers">
+          <p>
+            Да, у нас можно начинать учиться без какого-либо модельного опыта. Самое главное - это желание учиться
+            и развиваться.
+          </p>
+        </div>
+        <h3 class="questions__item">Есть ли какие-то определенные параметры, по которым отбирают детей в модельную
+          школу?</h3>
+        <div id="ans3" class="questions__answers">
+          <p>
+            Никаких параметров нет! Мы рады абсолютно всем ребятам, кто хочет развиваться и заниматься своим
+            дополнительным образованием.
+          </p>
+        </div>
+        <h3 class="questions__item">Идет ли сейчас набор в школу моделей?</h3>
+        <div id="ans4" class="questions__answers">
+          <p>
+            Да, мы формируем группы для занятий в течение всего года! Так что смело пишите и звоните нам в любое
+            время!
+          </p>
+        </div>
+        <h3 class="questions__item">Как к вам попасть?</h3>
+        <div id="ans5" class="questions__answers">
+          <p>
+            Вы можете оставить заявку здесь, заполнив форму, либо связаться с нами по указанным номерам телефона.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="profile">
+      <h1 class="profile__title">Здесь вы можете оставить вашу заявку, отзыв или предложение</h1>
+      <div class="profile__wrapper">
+        <div class="profile__item profile__photo">
+          <img src="images/img3.jpg" alt="Милена Гасподарик">
+        </div>
+        <div class="profile__item">
+          <form action="#">
+            <div class="form__wrapper">
+              <div class="form-cell__wrapper">
+                <div class="form-cell--left">
+                  <label>Как Вас зовут<br/>
+                    <input type="text" class="form-cell" name="firstname" placeholder="введите имя">
+                  </label>
+                </div>
+                <div class="form-cell--right">
+                  <label>Ваша почта<br/>
+                    <input type="email" class="form-cell" name="emailbox" placeholder="введите E-mail">
+                  </label>
+                </div>
+              </div>
+              <div class="form-area__wrapper">
+                <label for="message"></label>
+                <textarea id="message" name="massage" rows="20" placeholder="Оставьте свой отзыв или вопрос">
+                </textarea>
+              </div>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" name="request" value="Yes">Хочу учиться в Elliz Models
+              </label>
+            </div>
+            <div>
+              <input type="submit" value="Отправить" onclick="alert('Ваша заявка отправлена')">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="logo logo-footer">
+        <a href="" title="Перейти на главную">ELLIZ<br/><span>Kids Model Agency</span><br/>MODELS</a>
+      </div>
+      <div>
+        <ul class="main-footer__contact contact">
+          <li class="contact__item">
+            <a href="tel:+375298820882" title="Позвонить">+375298820882</a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+375297887158" title="Позвонить">+375297887158</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__social-link social-link">
+        <a class="i-eM-instagram" href="https://www.instagram.com/ellizmodels/" target="_blank"
+           title="Профиль Instagram"></a>
+        <a class="i-eM-vk" href="https://vk.com/ellizmodels" target="_blank" title="Профиль ВКонтакте"></a>
+        <a class="i-eM-mail" href="mailto://ellizmodels@mail.ru" target="_blank"
+           title="ellizmodels@mail.ru"></a>
+      </div>
+      <p class="main-footer__rights">© 2019-2020 Ellizmodels. All rights reserved<br/><i class="i-eM-camera"></i>Photo
+        by Nastya Korneva, Tatyana Teryaeva, Yuliya Yaskevich</p>
+    </div>
+  </footer>
+  <script src="js/navToggle.js"></script>
+</body>
+</html>
