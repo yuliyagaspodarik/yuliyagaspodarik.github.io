@@ -1,0 +1,41 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Elliz Models",
+  "description": "Kids model agency",
+  "short_name": "EM",
+  "icons": [{
+    "src": "../favicon.ico",
+    "sizes": "16x16"
+    },{
+    "src": "../images/icons/android-icon-48x48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  },{
+    "src": "../images/icons/apple-icon-57x57.png",
+    "sizes": "57x57",
+    "type": "image/png"
+  },{
+    "src": "../images/icons/favicon-96x96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  },{
+    "src": "../images/icons/ms-icon-70x70.png",
+    "sizes": "70x70",
+    "type": "image/png"
+  },{
+    "src": "../images/icons/ms-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "start_url": "https://github.com/yuliyagaspodarik/yuliyagaspodarik.github.io",
+  "orientation": "landscape",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#e4dde4",
+  "screenshots": [{
+    "src": "../images/screenshots/screenshot.jpg",
+    "sizes": "1920x1030",
+    "type": "image/jpeg"
+  }]
+}
